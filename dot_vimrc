@@ -1,0 +1,35 @@
+" Set the number of spaces a tab counts for
+set tabstop=4
+
+" Set shortcut for line numbers
+nmap <f2> :set number! number?<cr>
+
+" Set shortcut for mouse toggle
+nnoremap <F3> :if index(split(&mouse, ','), 'a') >= 0 \| set mouse-=a \| else \| set mouse+=a \| endif<CR>
+
+" Set the number of spaces used for (auto)indent step
+set shiftwidth=4
+
+" Use spaces instead of tabs
+set expandtab
+
+" Use the desert color scheme
+colorscheme desert
+
+" Enable syntax highlighting
+syntax on
+
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+" Enable line numbers
+" set number
+
+" Enable mouse so that it works over SSH
+" set mouse=a
+
+" Set .scene files to highlight like .ini files
+autocmd BufNewFile,BufRead *.scene set filetype=dosini
+autocmd BufNewFile,BufRead *.scene set syntax=dosini
+
