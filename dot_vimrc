@@ -14,7 +14,7 @@ set shiftwidth=4
 set expandtab
 
 " Use the desert color scheme
-colorscheme desert
+colorscheme elflord
 
 " Enable syntax highlighting
 syntax on
