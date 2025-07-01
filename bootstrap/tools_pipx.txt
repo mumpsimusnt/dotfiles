@@ -1,0 +1,4 @@
+tmuxp
+black
+glances
+ruff
